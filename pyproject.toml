@@ -53,5 +53,9 @@ build-backend = "setuptools.build_meta"
 [tool.setuptools_scm]
 local_scheme="no-local-version"
 
+[tool.poetry]
+name = "chromadb"
+
 [tool.setuptools]
+name = "chromadb"
 packages = ["chromadb"]
