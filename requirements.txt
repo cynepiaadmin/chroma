@@ -17,3 +17,4 @@ tqdm==4.65.0
 typing_extensions==4.6.1
 uvicorn[standard]==0.18.3
 overrides
+onnxruntime
