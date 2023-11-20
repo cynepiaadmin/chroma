@@ -50,9 +50,9 @@ class Collection(BaseModel):
         embedding_function: Optional[EmbeddingFunction] = ef.DefaultEmbeddingFunction(),
         metadata: Optional[CollectionMetadata] = None,
     ):
+        super().__init__(name=name, metadata=metadata, id=id)
         self._client = client
         self._embedding_function = embedding_function
-        super().__init__(name=name, metadata=metadata, id=id)
 
     def __repr__(self) -> str:
         return f"Collection(name={self.name})"
