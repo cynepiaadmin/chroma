@@ -276,7 +276,7 @@ class DuckDB(Clickhouse):
     def _format_where_document(self, where_document, results):
         operator = list(where_document.keys())[0]
         if operator == "$contains":
-            results.append(f"position('{where_document[operator]}' in document) > 0")
+            results.append(f"position('{where_document[operator]}' in lower(document)) > 0")
         elif operator == "$and" or operator == "$or":
             all_subresults = []
             for subwhere in where_document[operator]:
