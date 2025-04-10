@@ -1,13 +1,13 @@
 chroma-hnswlib==0.7.0
 clickhouse-connect==0.5.7
 duckdb==0.7.1
-pydantic==2.7.4
+pydantic==2.11.3
 fastapi==0.103.1
 graphlib_backport==1.0.3; python_version < '3.9'
-numpy==1.22
-onnxruntime==1.14.1
+numpy==2.2.4
+onnxruntime==1.21.0
 overrides==7.3.1
-pandas==2.0.3
+pandas==2.2.3
 posthog==2.4.0
 pulsar-client==3.1.0
 pypika==0.48.9
