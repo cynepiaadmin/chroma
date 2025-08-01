@@ -221,7 +221,7 @@ class Collection(BaseModel):
             where_document = {}
 
         return self._client._query(
-            collection_id=self.id,
+            collection_id=str(self.id) if isinstance(self.id, UUID) else self.id,
             query_embeddings=query_embeddings,
             n_results=n_results,
             where=where,
